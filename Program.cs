@@ -1,5 +1,16 @@
-﻿namespace crud_user {
+﻿using crud_user.models;
+
+namespace crud_user {
     class Program {
+        static List<UserModel> usuarios = new List<UserModel>();
+
+        static void Listar()
+        {
+            foreach (UserModel u in usuarios)
+            {
+                Console.WriteLine($"ID - {u.Id}\n Nome: {u.Nome}\n Idade: {u.Idade}\n Gênero: {u.Genero}");
+            }
+        }
         static void Main(string[] args)
         {
             while (true)
