@@ -1,0 +1,15 @@
+/Users/lincolndiogo/Documents/crud-user/bin/Debug/net9.0/crud-user
+/Users/lincolndiogo/Documents/crud-user/bin/Debug/net9.0/crud-user.deps.json
+/Users/lincolndiogo/Documents/crud-user/bin/Debug/net9.0/crud-user.runtimeconfig.json
+/Users/lincolndiogo/Documents/crud-user/bin/Debug/net9.0/crud-user.dll
+/Users/lincolndiogo/Documents/crud-user/bin/Debug/net9.0/crud-user.pdb
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.AssemblyInfoInputs.cache
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.AssemblyInfo.cs
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.csproj.CoreCompileInputs.cache
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.sourcelink.json
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.dll
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/refint/crud-user.dll
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.pdb
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/crud-user.genruntimeconfig.cache
+/Users/lincolndiogo/Documents/crud-user/obj/Debug/net9.0/ref/crud-user.dll
