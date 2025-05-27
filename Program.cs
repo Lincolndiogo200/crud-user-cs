@@ -9,6 +9,7 @@ namespace crud_user {
             if (usuarios.Count <= 0)
             {
                 Console.WriteLine("Lista sem usuários cadastros.");
+                Console.WriteLine();
                 return;
             }
         
@@ -54,6 +55,27 @@ namespace crud_user {
            
             
         }
+
+        static void Atualizar()
+        {
+            Listar();
+            Console.Write("\nDigite o ID do usuário no qual deseja atualizar: ");
+            int idAtualizar = int.Parse(Console.ReadLine()!);
+            int index = usuarios.FindIndex(u => u.Id == idAtualizar);
+            if (index != -1)
+            {
+                Console.WriteLine("Digite o nome: ");
+                usuarios[index].Nome = Console.ReadLine();
+
+                Console.WriteLine("Digite a idade: ");
+                usuarios[index].Idade = int.Parse(Console.ReadLine()!);
+
+                Console.WriteLine("Digite o gênero: ex:(M/F)");
+                usuarios[index].Genero = char.Parse(Console.ReadLine()!);
+
+                Console.WriteLine($"Usuário: {usuarios[index].Id} atualizado com sucesso!");
+            }
+        }
         static void Main(string[] args)
         {
             while (true)
@@ -77,7 +99,7 @@ namespace crud_user {
                         Cadastrar();
                         break;
                     case 3:
-                        // Atualizar();
+                        Atualizar();
                         break;
                     case 4:
                         // Deletar();
