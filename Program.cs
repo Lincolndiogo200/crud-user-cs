@@ -73,7 +73,7 @@ namespace crud_user {
                 Console.WriteLine("Digite o gênero: ex:(M/F)");
                 usuarios[index].Genero = char.Parse(Console.ReadLine()!);
 
-                Console.WriteLine($"Usuário: {usuarios[index].Id} atualizado com sucesso!");
+                Console.WriteLine($"Usuário: {usuarios[index].Id} foi atualizado com sucesso!");
             }
         }
         static void Main(string[] args)
