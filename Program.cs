@@ -73,8 +73,24 @@ namespace crud_user {
                 Console.WriteLine("Digite o gênero: ex:(M/F)");
                 usuarios[index].Genero = char.Parse(Console.ReadLine()!);
 
-                Console.WriteLine($"Usuário: {usuarios[index].Id} foi atualizado com sucesso!");
+                Console.WriteLine($"Usuário: {usuarios[index].Id} atualizado com sucesso!");
             }
+        }
+
+        static void Deletar()
+        {
+            Listar();
+            Console.Write("\nDigite o ID do usuário no qual deseja deletar: ");
+            int idDeletar = int.Parse(Console.ReadLine()!);
+            int index = usuarios.FindIndex(u => u.Id == idDeletar);
+            if (index != -1)
+            {
+                usuarios.Remove(usuarios[index]);
+                Console.WriteLine("Usuário deletado com sucesso!");
+                return;
+            }
+            Console.WriteLine("Usuário não encontrado!");
+
         }
         static void Main(string[] args)
         {
@@ -102,7 +118,7 @@ namespace crud_user {
                         Atualizar();
                         break;
                     case 4:
-                        // Deletar();
+                        Deletar();
                         break;
                     case 5:
                         Console.WriteLine("Saindo...");
